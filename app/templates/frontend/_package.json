@@ -1,0 +1,24 @@
+{
+  "name": "<%= appName %>",
+  "version": "0.0.1",
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "~0.4.4",
+    "grunt-autoprefixer": "~0.7.3",
+    "grunt-bower-install": "~1.4.1",
+    "grunt-contrib-concat": "~0.4.0",
+    "grunt-contrib-jshint": "~0.10.0",
+    "jshint-stylish": "~0.2.0",
+    "grunt-contrib-watch": "~0.6.1",
+    "grunt-contrib-less": "~0.11.0",
+    "grunt-newer": "~0.7.0",
+    "time-grunt": "~0.3.1",
+    "load-grunt-tasks": "~0.4.0",
+    "grunt-include-source": "~0.3.7",
+    "grunt-php": "~0.3.3",
+    "grunt-php-version": "0.1.0"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  }
+}

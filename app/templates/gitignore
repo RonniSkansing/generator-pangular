@@ -1,0 +1,14 @@
+# frontend
+node_modules
+frontend/bower_components
+frontend/styles
+
+# backend
+backend/vendor
+
+# the rest
+.idea
+nb_project
+.DS_Store
+.tmp
+.sass-cache

@@ -1,0 +1,28 @@
+{
+    "name": "<%= appName %>",
+    "description": "Description",
+    "keywords": ["FirstKeyWord","SecondKeyWord"],
+    "homepage": "https://example.com",
+    "license": "CC0",
+    "authors": [
+        {
+            "name": "Firstname Lastname",
+            "email": "email@example.com",
+            "role": "Developer"
+        }
+    ],
+    "config": {
+        "vendor-dir": "backend/vendor"
+    },
+    "require": {
+        "php": ">=5.5"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "3.7.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "<%= appName %>\\": "backend/src/<%= appName %>/"
+        }
+    }
+}
