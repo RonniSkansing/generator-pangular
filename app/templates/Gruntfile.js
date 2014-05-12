@@ -33,24 +33,27 @@ module.exports = function (grunt) {
           livereload: true
         }
       },
-      jsAdd: {
+      jsAddOrRemove: {
         files: ['<%= myApp.modulesPath %>/*/{,*/}*.js'],
-        tasks: ['newer:jshint', 'includeSource:dev', 'bowerInstall'],
+        tasks: ['newer:jshint', 'includeSource:dev', 'bowerInstall', 'phpreload'],
         options: {
-          event: ['added']
-        }
-      },
-      jsRemove: {
-        files: ['<%= myApp.modulesPath %>/*/{,*/}*.js'],
-        tasks: ['includeSource:dev', 'bowerInstall'],
-        options: {
-          event: ['deleted']
+          event: ['added', 'deleted'],
+          livereload: true
         }
       },
       less: {
         files: ['<%= myApp.modulesPath %>/*/{,*/}*.less'],
-        tasks: ['less:compile','autoprefixer:dev'],
+        tasks: ['less:dev','autoprefixer:dev'],
         options: {
+          event: ['changed'],
+          livereload: true
+        }
+      },
+      lessAddOrRemove: {
+        files: ['<%= myApp.modulesPath %>/*/{,*/}*.less'],
+        tasks: ['includeSource:dev', 'bowerInstall', 'phpreload'],
+        options: {
+          event: ['added', 'deleted'],
           livereload: true
         }
       },
