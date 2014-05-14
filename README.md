@@ -5,7 +5,7 @@
 
 ## How to use
 
-1. npm install pangular 
+1. npm install generator-pangular 
 2. yo pangular && composer install && grunt serve
 3. Visit 127.0.0.1:8080
 
