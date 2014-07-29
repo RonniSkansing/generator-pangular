@@ -2,6 +2,8 @@
 
 > Experimenting with yeoman generator to see if it can help a in a fast prototyping process.
 
+NOTE : I remove the generator from yeoman, this repo can still be used by cloning and using npm link.
+do not use, archived for memory lane.
 
 ## How to use
 
@@ -46,6 +48,3 @@
   - Proper attribution to projects used
   - Lots more.
 
-
-Feel free to PR or whatever you feel like
-=======
